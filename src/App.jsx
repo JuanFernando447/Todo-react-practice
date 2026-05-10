@@ -4,6 +4,7 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import ComponentTest from './ComponentTest'
+import ReusableComponent from './ReusableComponent'
 
 function App() {
   const [count, setcount] = useState(0)
@@ -31,6 +32,9 @@ function App() {
     <h2>El valor del contador es: {count} </h2>
     
     <ComponentTest name="Juanfer" count={count} />
+    <ReusableComponent/>
+    <ReusableComponent/>
+    <ReusableComponent/>
     </>
   )
 }    
