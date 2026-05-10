@@ -1,8 +1,8 @@
-function ReusableComponent() {
+function ReusableComponent({ title = "Componente reutilizable", description = "Texto por defecto" }) {
     return (
         <>
-        <h3>Componente reutilizable y llamado varias veces</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, distinctio hic id consectetur quasi neque sed libero facilis eaque eligendi quo repudiandae et quidem assumenda, doloribus suscipit magni sint adipisci?</p>
+        <h3>{title}</h3>
+        <p>{description}</p>
         <img className="img" src="./public/favicon.svg" alt="imagen reutilizable" width="100px" height="100px" />
         </>
     )
